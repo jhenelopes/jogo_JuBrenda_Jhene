@@ -1,11 +1,7 @@
 :root{
-    --main-blue-color: #74c7fc; 
+    --main-blue-color: #d8199f; 
 }
-p#som{
-    position: fixed;
-    top: 50px;
-    right: 50px; 
-}
+
 p#refresh{
     position: fixed;
     top: 50px;
@@ -16,18 +12,11 @@ p i{
     transition: .2s;
     cursor: pointer;
 }
-p#som i.fa-volume-up{
-    color: var(--main-blue-color) !important;
-}
-p#som i.fa-volume-mute{
-    color: rgb(216, 41, 18) !important;
-}
+
 p#refresh i{
     color: var(--main-blue-color) !important;
 }
 p#refresh i:hover, p#som i.fa-volume-up:hover{
-    color: #16a4fd !important;
+    color: #b416fd !important;
 }
-p#som i.fa-volume-mute:hover{
-    color: rgb(255, 31, 1) !important;
-}
+

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
 :root{
-    --main-blue-color: #74c7fc; 
+    --main-blue-color: #940adf; 
 }
 /* Estilos Gerais */
 *{
@@ -18,7 +18,7 @@ body{
 /* Palco */
 .area-jogo-da-velha{
     border-radius: .30rem;
-    background-color: #2e5077ef;
+    background-color: #de2c5fef;
     margin: 0;
     position: absolute;               
     top: 50%;       

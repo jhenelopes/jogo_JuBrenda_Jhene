@@ -161,51 +161,23 @@ function toNumber(vect)
 function deuVelha()
 {
     document.getElementById('modalLabel').innerText = "Deu Velha, jogo empatado!"
-    document.getElementsByClassName('modal-body')[0].innerHTML = "<i class='far fa-meh-blank empate'></i>";
+  
     document.getElementById('btn-modal').click();
-    if(!jogoDaVelha.mute) empateSom();
+    if(!jogoDaVelha.mute) 
     limpaMatriz();
 }
 function winner(vencedor){
     if(vencedor == 1)
     {
         document.getElementById('modalLabel').innerText = `Parabéns jogador, você venceu!`;
-        document.getElementsByClassName('modal-body')[0].innerHTML = "<i class='fas fa-trophy'></i>";
-        if(jogoDaVelha.alternaEfeitosSonoros == 1)
-        {
-            if(!jogoDaVelha.mute)
-            {
-                vitoriaSom01(); 
-                jogoDaVelha.alternaEfeitosSonoros = 2;
-            } 
-            
-        }
-        else{
-            if(!jogoDaVelha.mute)
-            {
-                vitoriaSom02();
-                jogoDaVelha.alternaEfeitosSonoros = 1;
-            }  
-        }
+
+
+
     }
     else{
-        document.getElementById('modalLabel').innerText = `Não foi dessa vez, a máquina venceu!`;
-        document.getElementsByClassName('modal-body')[0].innerHTML = "<i class='fas fa-robot machineWin'></i>";
-        if(jogoDaVelha.alternaEfeitosSonoros == 1)
-        {
-            
-            if(!jogoDaVelha.mute){
-                derrotaSom01(); 
-                jogoDaVelha.alternaEfeitosSonoros = 2;
-             }
-           
-        }
-        else{
-            if(!jogoDaVelha.mute){
-                derrotaSom02(); 
-                jogoDaVelha.alternaEfeitosSonoros = 1;
-             }
-        }
+        document.getElementById('modalLabel').innerText = `Não foi dessa vez`;
+       
+    
     }
     document.getElementById('btn-modal').click();
     
@@ -275,7 +247,7 @@ function desenhaLinha()
 {
     if(jogoDaVelha.sequenciaGanhadora != 0)
     {
-        document.getElementById('canvasLinhas').style.display = "block";
+
         switch(jogoDaVelha.sequenciaGanhadora)
         {
             case 1: draw(0, 23.2, 2)     
