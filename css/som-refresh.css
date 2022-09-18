@@ -2,7 +2,7 @@
     --main-blue-color: #d8199f; 
 }
 
-p#refresh{
+p#refresh {
     position: fixed;
     top: 50px;
     left: 50px;
